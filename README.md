@@ -19,3 +19,14 @@
 ```
 Resolved exception caused by Handler execution:
 ``` 
+
+## Internationalization
+### Configuration
+- LocaleResolver
+    - Default Locale - Locale.US
+- ResourceBundleMessageSource
+
+### Usage
+- Autowire MessageSource
+- @RequestHeader(value = "Accept-Language, required = false) Locale locale
+- messageSource.getMessage("helloWorld.message", null, locale) 
